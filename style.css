@@ -137,7 +137,7 @@ a {
 	animation-duration: 2s;
 	position          : relative;
 	overflow          : hidden;
-	max-width         : 100%;
+	max-width         : 200px;
 }
 
 .header__text p {
@@ -147,7 +147,7 @@ a {
 	animation-duration: 2s;
 	position          : relative;
 	overflow          : hidden;
-	max-width         : 100%;
+	max-width         : 200px;
 }
 
 @keyframes example {
