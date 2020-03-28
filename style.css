@@ -137,7 +137,7 @@ a {
 	animation-duration: 2s;
 	position          : relative;
 	overflow          : hidden;
-	width             : 200px;
+	max-width         : 100%;
 }
 
 .header__text p {
@@ -147,7 +147,7 @@ a {
 	animation-duration: 2s;
 	position          : relative;
 	overflow          : hidden;
-	width             : 200px;
+	max-width         : 100%;
 }
 
 @keyframes example {
@@ -239,8 +239,8 @@ a {
 	display         : flex;
 	justify-content : space-between;
 	background-color: #fff;
-	min-height      : 800px;
 	margin          : 50px 0;
+	width           : 100%;
 }
 
 .main__left,
@@ -252,7 +252,7 @@ a {
 	display       : flex;
 	flex-direction: column;
 	align-items   : center;
-	max-width     : 280px;
+	flex          : 0 1 280px;
 }
 
 .main__left_image {
@@ -286,7 +286,7 @@ a {
 	display       : flex;
 	flex-direction: column;
 	align-items   : flex-start;
-	max-width     : 100%;
+	width         : 100%;
 }
 
 .main__left_actors b {
@@ -325,13 +325,11 @@ a {
 .main__right_content {
 	display        : flex;
 	justify-content: space-between;
+	width          : 100%;
 }
 
 .main__content_center {
-	max-width: 60%;
-}
-
-.main__content_center {
+	flex  : 0 1 800px;
 	margin: 50px 0;
 }
 
@@ -347,8 +345,8 @@ a {
 }
 
 .main__content_right {
-	max-width: 220px;
-	margin   : 50px;
+	flex  : 0 1 280px;
+	margin: 50px;
 }
 
 .main__right_searcs {
@@ -396,19 +394,34 @@ a {
 		font-size    : 14px;
 		padding-right: 15px;
 	}
+
+	.main__right_content {
+		flex-wrap: wrap;
+		margin   : 5px;
+	}
+
+	.main__content_right {
+		margin: 5px;
+	}
 }
 
 @media screen and (max-width:768px) {
 	.main__menu ul {
 		flex-direction: column;
+		align-items   : center;
 	}
 
 	.main__menu ul li {
-		margin: 5px 0;
+		margin: 7px 0;
 	}
 
 	.main__right_content {
 		flex-direction: column;
+	}
+
+	.main__left {
+		flex   : 0 1 100%;
+		padding: 0px 10px;
 	}
 }
 
@@ -421,6 +434,8 @@ a {
 	.header__bottom {
 		align-items: center;
 	}
+
+
 
 	.header__shortdescription {
 		flex-direction: column;
@@ -438,6 +453,11 @@ a {
 	}
 
 	.main__right {
+		flex-direction: column;
+		align-items   : center;
+	}
+
+	.main__left_actors {
 		align-items: center;
 	}
 
@@ -445,9 +465,9 @@ a {
 		align-items: center;
 	}
 
-	.main__left,
-	.main__right {
-		padding: 0px 5px;
+	.main__left {
+		width  : 100%;
+		padding: 15px;
 	}
 
 	.main__content_right {
@@ -455,18 +475,16 @@ a {
 	}
 
 	.main__content_center {
-		max-width: 100%;
-		padding  : 5px;
+		padding: 5px;
+		margin : 5px;
+	}
+
+	.main__content_right {
+		padding: 5px;
 	}
 
 	.main__content_right {
 		max-width: 100%;
-		padding  : 5px;
-	}
-
-	.main__left {
-		max-width: 100%;
-		padding  : 5px;
 	}
 }
 
