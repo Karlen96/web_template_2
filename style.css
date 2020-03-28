@@ -431,11 +431,15 @@ a {
 		align-items   : center;
 	}
 
+	.logo,
+	.search__body,
+	.header__user {
+		padding: 10px;
+	}
+
 	.header__bottom {
 		align-items: center;
 	}
-
-
 
 	.header__shortdescription {
 		flex-direction: column;
