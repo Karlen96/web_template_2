@@ -397,7 +397,6 @@ a {
 
 	.main__right_content {
 		flex-wrap: wrap;
-		margin   : 5px;
 	}
 
 	.main__content_right {
@@ -418,15 +417,38 @@ a {
 
 	.main__right_content {
 		flex-direction: column;
+
 	}
+
+	.main__right_content p {
+		padding: 10px;
+	}
+
 
 }
 
 @media screen and (max-width:576px) {
+
 	.header__top {
-		flex-direction: column;
-		align-items   : center;
+		position: relative;
 	}
+
+	.header__right {
+		justify-content: flex-end;
+		flex-wrap      : wrap-reverse;
+	}
+
+	.header__left {
+		position: absolute;
+		padding : 5px;
+		left    : 0;
+		top     : 0;
+	}
+
+	.header__shortdescription_right {
+		display: none;
+	}
+
 
 	.logo,
 	.search__body,
