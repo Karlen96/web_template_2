@@ -288,11 +288,17 @@ a {
 	flex-direction: column;
 	align-items   : flex-start;
 	width         : 100%;
-	min-height    : 100px;
+	margin        : 5px 0;
 }
 
 .main__left_actors b {
 	margin: 10px 0;
+}
+
+.main__left_actors ul {
+	display       : flex;
+	flex-direction: column;
+	align-items   : flex-start;
 }
 
 .main__left_actors ul li {
@@ -302,6 +308,7 @@ a {
 .main__left_actors ul li a {
 	text-decoration: underline;
 }
+
 
 .main__right {
 	display       : flex;
@@ -338,7 +345,7 @@ a {
 
 .main__content_center b {
 	display: block;
-	padding: 10px;
+	padding: 10px 0px;
 }
 
 .main__content_right b {
@@ -483,12 +490,12 @@ a {
 		align-items   : center;
 	}
 
-	.main__left_actors {
-		align-items: flex-start;
-	}
-
 	.main__right_content {
 		align-items: center;
+	}
+
+	.main__content_center b {
+		padding: 10px;
 	}
 
 	.main__content_right {
