@@ -63,6 +63,10 @@ a {
 	width          : 100%;
 }
 
+.header__search {
+	padding: 0 15px;
+}
+
 .search {
 	width: 100%;
 }
@@ -92,9 +96,6 @@ a {
 	margin          : 0px 5px;
 }
 
-.search__body input::placeholder {
-	padding-left: 10px;
-}
 
 .header__search_btn {
 	width           : 40px;
@@ -287,6 +288,7 @@ a {
 	flex-direction: column;
 	align-items   : flex-start;
 	width         : 100%;
+	min-height    : 100px;
 }
 
 .main__left_actors b {
@@ -310,11 +312,12 @@ a {
 
 .main__menu ul {
 	display: flex;
+
 }
 
 .main__menu ul li {
-	padding-right: 30px;
-	font-size    : 16px;
+	font-size: 16px;
+	padding  : 5px 10px;
 }
 
 .main__menu ul li :hover {
@@ -335,7 +338,7 @@ a {
 
 .main__content_center b {
 	display: block;
-	padding: 20px 0;
+	padding: 10px;
 }
 
 .main__content_right b {
